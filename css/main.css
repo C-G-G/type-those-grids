@@ -33,6 +33,7 @@ h1 {
 }
 
 /* need to solve the alignment issue here !!! */
+
 header {
   grid-area: box2;
   align-self: stretch; /* not sure where this expected property is supposed to go */
