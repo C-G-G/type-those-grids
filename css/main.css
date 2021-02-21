@@ -13,8 +13,10 @@ img {
   width: 100%;
 }
 
-h1, h2, figcaption, dt {
-  font-style: italic;
+/* Maybe better to zero out all margins as in a boilerplate instead? */
+
+figure {
+  margin: 0;
 }
 
 main {
@@ -27,29 +29,30 @@ main {
   gap: .75rem;
 }
 
+main div {
+  align-self: flex-end;
+  color: #fff;
+  line-height: .8;
+  padding-left: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+main img, main div {
+  grid-area: box2;
+}
+
+h1, h2, figcaption, dt {
+  font-style: italic;
+}
+
 h1 {
   font-size: 1.8rem;
   grid-area: box1;
-}
-
-/* need to solve the alignment issue here !!! */
-/* align-self is expected somewhere but where? */
-
-header {
-  grid-area: box2;
+  padding-left: 1rem;
 }
 
 h2 {
   font-size: 1.5rem;
-}
-
-header figcaption {
-  padding-left: 1rem;
-}
-
-article h2 {
-  padding-left: 1rem;
-  margin-bottom: 0;
 }
 
 .first {
@@ -62,6 +65,11 @@ article h2 {
 
 .third {
   grid-area: box5;
+}
+
+article h2 {
+  padding-left: 1rem;
+  margin-bottom: 0;
 }
 
 dl {
